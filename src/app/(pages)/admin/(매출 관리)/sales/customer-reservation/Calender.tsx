@@ -8,10 +8,6 @@ const Calendar = ({
 }: {
   events: { title: string; date: string }[];
 }) => {
-  // const headerToolbarOptions = {
-  //   right: "",
-  // };
-
   const dayCellContent = (arg: any) => {
     const date = arg.date.getDate();
     const fullDate = new Date(arg.date.getTime() + 24 * 60 * 60 * 1000)
